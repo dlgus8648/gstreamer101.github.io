@@ -71,6 +71,7 @@ gst_init (&argc, &argv);
 이 코드는 항상 GStreamer 애플리케이션에서 가장 먼저 실행되어야 하는 명령어입니다.
 `gst_init()` 함수는 다음 작업을 수행합니다:
 
+
 - 내부 구조 초기화
 - 사용 가능한 플러그인 확인
 - GStreamer 관련 명령줄 옵션 실행
@@ -111,7 +112,9 @@ playbin 은 소스(Source) 이자 싱크(Sink) 역할을 모두 수행하는 특
 물론 수동 파이프라인처럼 세밀한 제어는 어렵지만, 다양한 애플리케이션에서 충분히 사용할 수 있을 만큼의 커스터마이징 기능은 제공합니다.
 
 원하는 미디어 URI 로 변경해보세요
+
 `http://`이든 `file://`이든, playbin 이 알아서 적절한 GStreamer 소스를 생성해줍니다.
+
 
 ### 2.3 재생시작
 
@@ -128,6 +131,7 @@ gst_element_set_state (pipeline, GST_STATE_PLAYING);
 
 여기서는 `gst_element_set_state()` 함수를 통해
 pipeline (이 예제의 유일한 요소(Element))을 `GST_STATE_PLAYING` 상태로 설정하여 재생을 시작하고 있습니다.
+
 
 ### 2.4 오류 또는 EOS(End of Stream)을 기다림
 
@@ -157,6 +161,7 @@ return 0;
 
 사용하는 함수의 문서를 반드시 참고하여,
 반환된 객체를 해제해야 하는지 꼭 확인하세요.
+
 
 - `gst_bus_timed_pop_filtered()`는 메시지를 반환하며, 이 메시지는 gst_message_unref()로 해제해야 합니다.
 - (메시지에 대한 자세한 내용은 기본 튜토리얼 2 에서 다룹니다)
