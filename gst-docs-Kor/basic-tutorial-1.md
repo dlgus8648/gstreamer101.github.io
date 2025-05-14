@@ -177,4 +177,6 @@ gcc basic-tutorial-1.c -o basic-tutorial-1 `pkg-config --cflags --libs gstreamer
 ```
 
 ## 4. 결과
+- https://gstreamer.freedesktop.org/data/media/sintel_trailer-480p.webm 의 영상이 재생됩니다.
+- 재생 화면 중 캡쳐화면
 ![튜토리얼 1 결과 이미지](https://raw.githubusercontent.com/dlgus8648/gstreamer101.github.io/practice/image/basic_tutorial_1.png)
