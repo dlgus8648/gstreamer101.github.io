@@ -171,4 +171,4 @@ gcc basic-tutorial-1.c -o basic-tutorial-1 `pkg-config --cflags --libs gstreamer
 
 ## 4. 결과
 
-![image.png](attachment:f517a47c-c723-4d60-b71b-b813a8491d3b:image.png)
+![튜토리얼 1 결과 이미지](https://gstreamer101.github.io/image/basic_tutorial_1.png)
